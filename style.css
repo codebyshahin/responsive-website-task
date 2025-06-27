@@ -1,0 +1,83 @@
+/* Base desktop style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header, footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1.5rem;
+  padding: 0.5rem 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.column {
+  width: 48%;
+}
+
+.column img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* ✅ MEDIA QUERY for Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .column {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  footer {
+    font-size: 0.9rem;
+  }
+}
